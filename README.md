@@ -1,2 +1,2 @@
-# dali-layers
-DALi Validation Layers
+# dali-debug-layers
+Prototype of dali validation layers

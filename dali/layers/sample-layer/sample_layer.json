@@ -1,0 +1,26 @@
+{
+  "layer" : {
+    "name" : "DALI_autoreplay_layer",
+    "library" : "libautoreplay-layer.so",
+    "description" : "DALi autoreplay simulation layer",
+    "version" : "0.0.1",
+    "config" : {
+      "capturePrefix" : "/tmp/capture/scroll-test",
+      "captureFrames" : [ 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
+      "captureEnabled" : 1,
+      "recordSimFilePath" : "/tmp/test.sim",
+      "replaySimFilePath" : "/tmp/test.sim",
+      "modeRecord" : 0,
+      "modeReplay" : 1,
+      "terminateOnFinish" : true,
+      "debugLevel" : 1
+    },
+
+    "protectedSymbols" : [
+      "Dali::Integration::Core::Initialize()",
+      "Dali::Integration::TouchEventCombiner::GetNextTouchEvent()",
+      "Dali::Internal::EventProcessor::ProcessEvents()"
+    ]
+  }
+}
+

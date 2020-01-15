@@ -1,0 +1,13 @@
+{
+  "layer" : {
+    "name" : "DALI_thread_checker_layer",
+    "library" : "libautoreplay-layer.so",
+    "description" : "DALi autoreplay simulation layer",
+    "version" : "0.0.1",
+    "config" : {
+
+    },
+
+  }
+}
+
