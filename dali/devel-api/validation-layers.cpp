@@ -298,8 +298,10 @@ DispatchNode* GetNextDispatchNode()
                          uint32_t(it - g_validationLayerInfoStorage.begin()) :
                          uint32_t(0xffffffff) );
 
-                       chainPtr->func.push_back( sym );
-
+                       if(sym)
+                       {
+                         chainPtr->func.push_back( sym );
+                       }
                        // close the library
                        dlclose(handle);
                      });
